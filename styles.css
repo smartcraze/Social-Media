@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ddddddad;
+}
+.navbar {
+  /* background-image: url(./Background/pic7.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Rowdies", sans-serif;
+}
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dddddd25;
+  padding: 10px;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: rgb(142, 96, 250);
+  transition: 0.2s ease-in-out;
+}
+
+/* Logo Styles */
+.logo img {
+  width: 100%;
+}
+
+/* Menu Styles */
+.menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Search Button Styles */
+.search {
+  text-align: right;
+}
+
+.search input {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
+  }
+
+  .search {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
+  }
+}
+/* changing background */
+.hero-container {
+  position: relative;
+
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* now styling hero section  */
+.hero {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 50px;
+  z-index: -1;
+}
+header::before {
+  content: "";
+  background: url("./Background/pic11.jpg") center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* bottom: 11rem; */
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* ....................................  */
+/* General styling for the welcome section */
+/* General styling for the welcome section */
+.welcome-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #f8f8f800; /* Light background color */
+}
+
+/* Styling for the main heading */
+.welcome-heading {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgb(216, 215, 215);
+  color: #000000; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+/* Styling for the subheading */
+.welcome-subheading {
+  font-size: 2.2rem;
+  color: #ffffff; /* Slightly darker than the background color */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+/* Styling for the welcome message paragraphs */
+.welcome-paragraph {
+  font-size: 1.5rem;
+  color: #ffffff; /* Darker text color */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgb(31, 7, 7);
+}
+
+/* Styling for the call-to-action button */
+.welcome-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff; /* Text color */
+  background-color: #3498db; /* Button color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-button:hover {
+  background-color: #2980b9; /* Darker button color on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .welcome-heading {
+    font-size: 28px;
+  }
+
+  .welcome-subheading {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .welcome-paragraph {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .welcome-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+#element {
+  /* padding: 0px 10px ; */
+  color: rgb(238, 255, 0);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgb(28, 248, 8);
+}
+.main h1 {
+  text-align: center;
+}
+ /* custmizing home button  */
+ .custom-button {
+  display: inline-block;
+  position: absolute;
+  /* right: 60%; */
+  left: 44%;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  color: #3498db;
+  background-color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #875af7;
+  color: white;
+}
+
+/* Active (pressed) animation */
+.custom-button:active {
+  transform: scale(0.95); /* Scale down slightly on click */
+}
