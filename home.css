@@ -371,10 +371,6 @@ html{
   transition: transform 0.3s ease-in-out;
 }
 
-.video-container:hover video {
-  /* transform: scale(1.1); */
-}
-
 h2 {
   color: #ffffff;
   text-align: center;
